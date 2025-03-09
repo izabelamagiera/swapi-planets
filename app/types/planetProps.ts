@@ -1,10 +1,12 @@
 export interface PlanetsListProps {
   count: number;
-  prev: string;
+  previous: string;
   next: string;
   results: SinglePlanetProps[];
 }
-
+export interface PlanetsBySlugProps extends PlanetsListProps {
+  slug: string;
+}
 export interface SinglePlanetProps {
   name: string;
   url: string;
